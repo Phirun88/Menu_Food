@@ -215,7 +215,7 @@ const Menu = () => {
     "S13.jpg",
     "S14.jpg",
     "SW1.png",
-    "SW2.png",    
+    "SW2.png",
     "SW3.jpg",
     "SW4.webp",
     "SW5.png",
@@ -315,42 +315,42 @@ const Menu = () => {
         },
         {
           name: "មាន់ជើងបី",
-          img:  images["F012_A.jpg"],
+          img: images["F012_A.jpg"],
           prices: { ចានធំ: "$5.30" },
         },
         {
           name: "ពោតលីងបង្គាក្រៀម",
-          img:  images["F012.jpg"],
+          img: images["F012.jpg"],
           prices: { ចានធំ: "$4.20" },
         },
         {
           name: "ខ្យងប៉ារ៉ាព្រិល",
-          img:  images["F013.jpg"],
+          img: images["F013.jpg"],
           prices: { ចានធំ: "$7.80" },
         },
         {
           name: "ខ្យងប៉ារ៉ាក្រឡុកអំបិលម្ទេស",
-          img:  images["F014.jpg"],
+          img: images["F014.jpg"],
           prices: { ចានធំ: "$7.80" },
         },
         {
           name: "ជើងមាន់អំបិលម្ទេស",
-          img:  images["F015.jpg"],
+          img: images["F015.jpg"],
           prices: { ចានធំ: "$3.80" },
         },
         {
           name: "ប្រហិតគ្រប់មុខឆឹងហិរ",
-          img:  images["F016.jpg"],
+          img: images["F016.jpg"],
           prices: { ចានធំ: "$4.20" },
         },
         {
           name: "ប្រហិតសាច់គោឆឹងហិរ",
-          img:  images["F017.jpg"],
+          img: images["F017.jpg"],
           prices: { ចានធំ: "$4.20" },
         },
         {
           name: "ដំឡូងបារាំងបំពង",
-          img:  images["F018.jpg"],
+          img: images["F018.jpg"],
           prices: { ចានធំ: "$3.50" },
         },
         {
@@ -1372,12 +1372,16 @@ const Menu = () => {
         const prices = item.prices || {};
         const sizes = Object.keys(prices);
         const multipleSizes = sizes.length > 1;
-  
+
         html += `
                   <div class="rounded-lg border border-gray-200 bg-white p-2 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                      <img class="h-32 lg:h-56 xl:h-56 w-full object-cover" src="${item.img}" alt="${item.name}" loading="lazy">
+                      <img class="h-32 lg:h-56 xl:h-56 w-full object-cover" src="${
+                        item.img
+                      }" alt="${item.name}" loading="lazy">
                       <div class="pt-6">
-                          <div class="text-xl lg:text-2xl font-semibold leading-tight text-gray-900 dark:text-white">${item.name}</div>
+                          <div class="text-xl lg:text-2xl font-semibold leading-tight text-gray-900 dark:text-white">${
+                            item.name
+                          }</div>
                           
                           <!-- Size -->
                           ${
@@ -1415,7 +1419,6 @@ const Menu = () => {
     });
     document.getElementById("menu").innerHTML = html;
   }
-  
 
   return (
     <div>
@@ -1439,7 +1442,6 @@ const Menu = () => {
             <p class="text-lg font-medium text-gray-600 dark:text-gray-400">
               Tel: 081 577 772 / 067 577 772 / <br></br>099 577 772
             </p>
-            
           </div>
           <div class="flex-1"></div>
         </div>
