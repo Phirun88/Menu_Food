@@ -13,6 +13,7 @@ const Menu = () => {
     generateMenu(menu);
   }, []);
   const images = importImages([
+    "logo.jpg",
     "F001.jpg",
     "F002.jpg",
     "F02_A.jpg",
@@ -219,11 +220,24 @@ const Menu = () => {
     "SW4.webp",
     "SW5.png",
     "SW6.png",
+    "F_A.jpg",
+    "F_B.jpg",
+    "S_15.jpg",
   ]);
   const menu = [
     {
       type: "ម្ហូបប្រចាំហាង",
       items: [
+        {
+          name: "ឈុត",
+          img: images["F_A.jpg"],
+          prices: { ចានធំ: "$" },
+        },
+        {
+          name: "ឈុត",
+          img: images["F_B.jpg"],
+          prices: { ចានធំ: "$" },
+        },
         {
           name: "សាច់គោផ្ដាច់ប្រលឹង",
           img: images["F001.jpg"],
@@ -1305,6 +1319,11 @@ const Menu = () => {
           img: images["S14.jpg"],
           prices: { ចានធំ: "$1.00" },
         },
+        {
+          name: "ទឹកផ្លែឈើ",
+          img: images["S_15.jpg"],
+          prices: { ចានធំ: "$1.00" },
+        },
       ],
     },
     {
@@ -1400,30 +1419,31 @@ const Menu = () => {
 
   return (
     <div>
-      {/* <header class="bg-gray-50 py-6 dark:bg-gray-900">
-        <div class="mx-auto max-w-screen-xl px-4 flex flex-col md:flex-row items-center justify-between">
+      <header class="bg-gray-50 py-6 dark:bg-gray-900">
+        <div class="mx-auto max-w-screen-xl px-4 flex flex-col md:flex-col items-center justify-between">
           <div class="flex-1 mb-4 md:mb-0">
             <img
-              src="https://static.vecteezy.com/system/resources/thumbnails/023/628/609/small/coffee-shop-logo-design-png.png"
+              src={images["logo.jpg"]}
               alt="Restaurant Logo"
-              class="h-18"
+              class="h-18 md:h-48"
             />
           </div>
 
           <div class="flex-1 text-center">
-            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white">
-              Nisai Coffee
+            <h1 class="text-4xl mt-6 font-extrabold leading-none tracking-tight text-gray-900 dark:text-white">
+              ស្នាដៃម៉ាម៉ា ឆ្ញាញ់ ឆ្ញាញ់
             </h1>
             <p class="text-lg font-medium pt-4 text-gray-600 dark:text-gray-400">
-              Address: #123, Street ABC, Phnom Penh, Cambodia
+              Address: ឬស្សីកែវ , សង្កាត់ស្វាយប៉ាក
             </p>
             <p class="text-lg font-medium text-gray-600 dark:text-gray-400">
-              Tel: +855 12 345 678
+              Tel: 081 577 772 / 067 577 772 / <br></br>099 577 772
             </p>
+            
           </div>
           <div class="flex-1"></div>
         </div>
-      </header> */}
+      </header>
 
       <section class="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-12">
         <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
