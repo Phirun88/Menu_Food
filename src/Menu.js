@@ -229,12 +229,12 @@ const Menu = () => {
       type: "ម្ហូបប្រចាំហាង",
       items: [
         {
-          name: "ឈុត",
+          name: "ឈុតប៊ូហ្វេ",
           img: images["F_A.jpg"],
           prices: { ចានធំ: "$" },
         },
         {
-          name: "ឈុត",
+          name: "ឈុតប៊ូហ្វេ",
           img: images["F_B.jpg"],
           prices: { ចានធំ: "$" },
         },
