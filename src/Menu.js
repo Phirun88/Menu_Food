@@ -1356,7 +1356,7 @@ const Menu = () => {
   
         html += `
                   <div class="rounded-lg border border-gray-200 bg-white p-2 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                      <img class="h-32 lg:h-56 xl:h-56 w-full object-cover" src="${item.img}" alt="${item.name}">
+                      <img class="h-32 lg:h-56 xl:h-56 w-full object-cover" src="${item.img}" alt="${item.name}" loading="lazy">
                       <div class="pt-6">
                           <div class="text-xl lg:text-2xl font-semibold leading-tight text-gray-900 dark:text-white">${item.name}</div>
                           
