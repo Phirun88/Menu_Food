@@ -223,6 +223,7 @@ const Menu = () => {
     "F_A.jpg",
     "F_B.jpg",
     "S_15.jpg",
+    "F040_A.jpg",
   ]);
   const menu = [
     {
@@ -251,7 +252,7 @@ const Menu = () => {
         {
           name: "បង្កងឆាពងទាប្រៃ",
           img: images["F03_A.jpg"],
-          prices: { ចានធំ: "$15.00" },
+          prices: { ចានធំ: "$10.00" },
         },
         {
           name: "បង្គារឆាពងទាប្រៃ",
@@ -267,11 +268,6 @@ const Menu = () => {
           name: "ត្រីបណ្ដើរកូន",
           img: images["F003.jpg"],
           prices: { ចានធំ: "$7.80" },
-        },
-        {
-          name: "ប៉ាតេខូល័រខាប់",
-          img: images["F004.jpg"],
-          prices: { ចានធំ: "$5.30" },
         },
         {
           name: "ប្រហិតត្រីចៀន",
@@ -460,7 +456,7 @@ const Menu = () => {
         },
         {
           name: "អយស្ទ័រស្រស់",
-          img: images["F038.jpg"],
+          img: images["F040_A.jpg"],
           prices: { ចានធំ: "$10.20" },
         },
         {
